@@ -39,8 +39,11 @@ class SequenceModel(LightningModule):
         logger.info(f"Instantiating datamodule <{self.cfg.datamodule._target_}>")
         # Calling this self.datamodule will mess with PL since it also assigns self.datamodule
         self._datamodule: LightningDataModule = hydra.utils.instantiate(self.cfg.datamodule)
-        self._datamodule.prepare_data()
-        self._datamodule.setup()
+        try:
+            self._datamodule.prepare_data()
+            self._datamodule.setup()
+        except FileNotFoundError:
+            logger.warning("Dataset not found. Skip Data Preparation.")
 
     def instantiate_model(self):
         if hasattr(self._datamodule, 'num_classes'):

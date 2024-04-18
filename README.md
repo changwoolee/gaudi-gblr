@@ -102,14 +102,14 @@ The project downloads the WikiText103 and CIFAR-10/100 datasets automatically.
 ### ImageNet
 | Model | Accuracy | FLOPs |  Link |
 | ----- | --------: | ----: | ---- |
-| ViT-B-Gaudi-GBLR | 78.51%| 5.65G  | [TBA](#) |
-| ResNet18-Gaudi-GBLR | 69.31% | 1.01G  | [TBA](#) |
+| ViT-B-Gaudi-GBLR | 78.51%| 5.65G  | [link](https://github.com/changwoolee/Gaudi-GBLR/releases/download/v1.0.0/imagenet-vit-b-gaudi.ckpt) |
+| ResNet18-Gaudi-GBLR | 69.31% | 1.01G  | [link](https://github.com/changwoolee/Gaudi-GBLR/releases/download/v1.0.0/imagenet-resnet18-gaudi.ckpt) |
 
 
 ### WikiText-103
 | Model | Perplexity | Relative FLOPs |  Link |
 | ----- | --------: | ----: | ---- |
-| GPT2-Gaudi-GBLR | 18.98 | 43.7%  | [TBA](#) |
+| GPT2-Gaudi-GBLR | 18.99 | 43.7%  | [link](https://github.com/changwoolee/Gaudi-GBLR/releases/download/v1.0.0/gpt2-gaudi.ckpt) |
 
 ## Example Runs
 
